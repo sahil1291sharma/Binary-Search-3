@@ -3,7 +3,7 @@ class Solution:
         start = 0
         end = len(arr)-1
         
-        while (end - start) > k:
+        while (end - start + 1) > k:
             distLow = abs(x-arr[start])
             distHigh = abs(x-arr[end])
             if distLow >= distHigh:
